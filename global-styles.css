@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 :root {
@@ -12,7 +13,57 @@
 }
 
 body {
-    font-family: "proxima-soft", sans-serif;
+  font-family: "proxima-soft", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: var(--white);
+}
+
+#skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+}
+
+#skip-to-main:focus {
+  top: 100px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "ohno-softie-variable", sans-serif;
+  font-variation-settings: "wght" 500;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 35px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 25px;
 }
 
 /* hamburger menu */
@@ -54,6 +105,26 @@ nav {
   visibility: visible;
   right: 0;
 }
+
+#nav-toggle:focus ~ .nav-checkbox > span {
+  transform: rotate(45deg);
+}
+
+#nav-toggle:focus ~ .nav-checkbox > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#nav-toggle:focus ~ .nav-checkbox > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#nav-toggle:focus ~ #nav-links {
+  visibility: visible;
+  right: 0;
+}
+
 
 .nav-checkbox {
   display: flex;
@@ -159,8 +230,7 @@ nav a:not(#logo, .cta):active {
 }
 
 
-/* global styles */
-
+/* classes */
 .cta {
   max-width: 200px;
   width: 100%;
@@ -185,22 +255,19 @@ nav a:not(#logo, .cta):active {
   transform: scale(.99);
 }
 
-/* main content */
 
-body {
-  margin: 0;
-  background-color: var(--white);
+/* footer */
+footer img {
+  transition: 300ms transform;
 }
 
-main {
-  max-width: 900px;
-  margin: 0 auto;
+footer img:hover {
+  transform: scale(1.15);
 }
 
-
-
-
-
+footer img:active {
+  transform: scale(.99);
+}
 
 
 

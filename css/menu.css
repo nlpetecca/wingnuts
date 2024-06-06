@@ -24,18 +24,28 @@ h3, h4 {
 }
 
 .flavors h3 {
-    padding-left: 50px;
+    padding-left: .25em;
 }
 
-ul {
+section ul {
     list-style: none;
-    padding: 0 0 0 1em;
+    padding: 0 0 0 55px;
 }
 
-section img {
+section img:not(.peppers) {
     max-width: 100%;
     border-radius: 12px;
     padding: .5em;
+}
+
+.pepper-wrappers {
+    display: flex;
+    align-items: flex-end;
+}
+
+.peppers {
+    max-width: 45px;
+    height: 100%;
 }
 
 .quantity h4 {

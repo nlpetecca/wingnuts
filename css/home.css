@@ -48,6 +48,11 @@
     padding: .5em .5em 2em;
     overflow: hidden;
   }
+
+  .gallery-wrapper div:first-child {
+    max-width: 900px;
+    margin: 0 auto;
+  }
   
   .gallery-layout {
     display: flex;

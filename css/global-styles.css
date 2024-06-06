@@ -6,6 +6,7 @@
 
 :root {
   --blue: #0068FA;
+  --extralightblue: #add8e6;
   --lightblue: #007cfa;
   --darkblue: #0058d4;
   --white: #fff;
@@ -13,33 +14,41 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "proxima-soft", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   margin: 0;
   background-color: var(--white);
 }
 
 #skip-to-main {
   position: absolute;
-  top: -40px;
-  left: 0;
-  background: #000;
+  top: 0;
+  left: 50%;
+  background: var(--blue);
   color: #fff;
+  text-decoration: none;
   padding: 8px;
+  font-weight: 600;
 }
 
 #skip-to-main:focus {
-  top: 100px;
+  top: 0;
+  z-index: 999999;
 }
 
 main {
-  max-width: 900px;
   margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "ohno-softie-variable", sans-serif;
   font-variation-settings: "wght" 500;
+  margin: 0;
+  padding: .5em 0 0;
 }
 
 h1 {
@@ -71,6 +80,7 @@ header {
   background-color: var(--white);
   box-shadow: #00000033 0 2px 10px;
   position: sticky;
+  z-index: 200;
   top: 0;
 }
 
@@ -106,26 +116,6 @@ nav {
   right: 0;
 }
 
-#nav-toggle:focus ~ .nav-checkbox > span {
-  transform: rotate(45deg);
-}
-
-#nav-toggle:focus ~ .nav-checkbox > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-
-#nav-toggle:focus ~ .nav-checkbox > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-#nav-toggle:focus ~ #nav-links {
-  visibility: visible;
-  right: 0;
-}
-
-
 .nav-checkbox {
   display: flex;
   align-items: center;
@@ -135,6 +125,16 @@ nav {
   cursor: pointer;
   z-index: 1;
   transition: 300ms;
+}
+
+#nav-toggle:focus + .nav-checkbox  {
+  outline: 2px solid #000;
+  outline-offset: 4px;
+  transition: none;
+}
+
+.nav-checkbox {
+  outline: none;
 }
 
 .nav-checkbox > span,
@@ -231,7 +231,14 @@ nav a:not(#logo, .cta):active {
 
 
 /* classes */
+.max-width-900 {
+  max-width: 900px;
+  padding: .5em .5em 2em;
+  margin: 0 auto;
+}
+
 .cta {
+  display: block;
   max-width: 200px;
   width: 100%;
   padding: .5em;
@@ -243,6 +250,7 @@ nav a:not(#logo, .cta):active {
   text-decoration: none;
   text-align: center;
   transition: 300ms transform;
+  text-transform: uppercase;
 }
 
 .cta:hover {
@@ -257,8 +265,19 @@ nav a:not(#logo, .cta):active {
 
 
 /* footer */
+footer {
+  margin-top: auto;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
 footer img {
   transition: 300ms transform;
+  max-width: 30px;
+  width: 100%;
 }
 
 footer img:hover {
@@ -269,32 +288,6 @@ footer img:active {
   transform: scale(.99);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer */
 footer {
     text-align: center;
     background-color: #272727;
@@ -316,7 +309,26 @@ footer a {
     padding: 4px;
 }
 
-footer small p {
+#back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 900;
+  background-color: var(--blue);
+  height: 40px;
+  width: 40px;
+  padding: 0 5px;
+  border-radius: 100%;
+}
+
+footer p {
     color: #fff;
     margin: 4px;
 }
+
+
+
+

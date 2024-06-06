@@ -1,0 +1,74 @@
+body {
+    background-color: var(--extralightblue);
+}
+
+main {
+    max-width: 900px;
+    width: 100%;
+    padding: 1em;
+}
+
+section {
+    background-color: var(--white);
+    padding: 1em;
+    margin-bottom: .5em;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: left;
+}
+
+h3, h4 {
+    font-variation-settings: "wght" 400;
+}
+
+.flavors h3 {
+    padding-left: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0 0 0 1em;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 12px;
+    padding: .5em;
+}
+
+.quantity h4 {
+    font-size: 21px;
+}
+
+.priced-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.priced-items p {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+}
+
+.party-section h3 {
+    font-variation-settings: "wght" 500;
+}
+
+.party-items h4 {
+    font-size: 32px;
+}
+
+.priced-items h4, .party-items h5 {
+    font-size: 21px;
+}
+
+
+
+
+
+

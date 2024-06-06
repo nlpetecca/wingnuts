@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wingnuts</title>
     <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/order.css" />
     <link rel="stylesheet" href="https://use.typekit.net/hsk5nqw.css" />
     <script src="global.js" defer></script>
   </head>
   <body id="body">
     <a href="#main" id="skip-to-main" tabindex="1">Skip to main content</a>
     <header id="header"></header>
-    <main id="main"></main>
+    <main id="main">
+      <section class="max-width-900">
+        <h1>Order Online</h1>
+        <label for="menu-categories">Choose menu category</label>
+        <select name="menu-categories" id="menu-categories">
+          <option value="" disabled selected>Choose menu category</option>
+          <option value="Combos">Combos</option>
+          <option value="Burgers/Sandwiches">Burgers/Sandwiches</option>
+          <option value="Wraps">Wraps</option>
+          <option value="Salads">Salads</option>
+          <option value="Parties">Parties</option>
+          <option value="Sides">Sides</option>
+          <option value="Desserts">Desserts</option>
+          <option value="Drinks">Drinks</option>
+        </select>
+      </section>
+    </main>
     <footer id="footer"></footer>
   </body>
 </html>

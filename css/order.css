@@ -1,0 +1,32 @@
+main {
+    margin: 1em;
+}
+
+label {
+    display: none;
+}
+
+select {
+    max-width: 100%;
+    width: 100%;
+    padding: 1em;
+    border: 3px solid var(--blue);
+    border-radius: 48px;
+    font-size: 18px;
+    color: var(--blue);
+    font-weight: 900;
+    font-family: 'proxima-soft', sans-serif;
+    cursor: pointer;
+}
+
+select:focus {
+    border: 3px solid var(--blue);
+}
+
+option:first-child {
+    background-color: #E1E7E9;
+}
+
+option:not(option:first-child) {
+    font-weight: 900;
+}

@@ -325,7 +325,10 @@ footer p {
     margin: 4px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 825px) {
+  nav {
+    flex-direction: row;
+  }
   .nav-checkbox, input {
     display: none;
     width: 0;
@@ -337,15 +340,20 @@ footer p {
   }
 
   #nav-links {
-    right: 0;
     visibility: visible;
     display: flex;
     flex-direction: row-reverse;
     height: unset;
+    position: unset;
+    align-items: center;
   }
 
   #browse-links, #action-links {
     flex-direction: row;
+  }
+
+  #action-links {
+    align-items: center;
   }
 }
 

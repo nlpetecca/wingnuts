@@ -76,3 +76,34 @@
     border-radius: 24px;
     padding: .5em;
   }
+
+  @media (min-width: 550px) {
+    .gallery-wrapper {
+      overflow: visible;
+    }
+
+    .gallery-layout {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .gallery-layout img {
+      max-height: unset;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .gallery-layout::-webkit-scrollbar-track {
+      display: none;
+    }
+  }
+
+@media (min-width: 650px) {
+  .gallery-layout img {  
+    max-width: 300px;
+  }
+}
+

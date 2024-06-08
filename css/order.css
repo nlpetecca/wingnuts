@@ -1,83 +1,103 @@
 body {
-    background-color: #E1E7E9;
+  background-color: #E1E7E9;
 }
 
 main {
-    padding: 1em;
+  padding: 1em;
 }
 
 label {
-    display: none;
+  display: none;
 }
 
 select {
-    max-width: 100%;
-    width: 100%;
-    padding: 1em;
-    border: 3px solid var(--blue);
-    outline: none;
-    border-radius: 48px;
-    font-size: 18px;
-    color: var(--blue);
-    font-weight: 900;
-    font-family: 'proxima-soft', sans-serif;
-    cursor: pointer;
-    transition: 200ms;
+  max-width: 100%;
+  width: 100%;
+  padding: 1em;
+  border: 3px solid var(--blue);
+  outline: none;
+  border-radius: 48px;
+  font-size: 18px;
+  color: var(--blue);
+  font-weight: 900;
+  font-family: 'proxima-soft', sans-serif;
+  cursor: pointer;
+  transition: 200ms;
 }
 
 select:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 select:focus, select:active, option:active {
-    border: 3px solid var(--blue);
+  border: 3px solid var(--blue);
 }
 
 option {
-    font-weight: 900;
+  font-weight: 900;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-wrapper h2, #Parties h3 {
+  max-width: 100%;
+  width: 100%;
 }
 
 .toggle-off {
-    display: none;
-  }
+  display: none;
+}
 
-  .toggle-on {
-    display: block;
-  }
+.toggle-on {
+  display: flex;
+  flex-wrap: wrap;
+}
   
 .item-wrapper {
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 100%;
-    width: 100%;
-    background-color: var(--white);
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 12px;
-    margin: .5em;
-  }
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 12px;
+  margin: .5em;
+  min-width: 200px;
+}
 
 .priced-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .priced-items h4, .party-items h5 {
-    font-size: 21px;
+  font-size: 21px;
 }
 
-  .item-wrapper a {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+.item-wrapper a {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   }
 
 .customize {
-    font-family: 'proxima-soft', sans-serif;
-    font-weight: 900;
-    color: var(--blue);
-    text-decoration: none;
-    padding: .5em;
+  font-family: 'proxima-soft', sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+  text-decoration: none;
+  padding: .5em;
+}
+
+
+@media (min-width: 650px) {
+  .item-wrapper {
+    max-width: 45%;
+    width: 100%;
   }
+}

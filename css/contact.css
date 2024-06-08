@@ -4,7 +4,7 @@ main {
 }
 
 .main-wrapper {
-    margin: 1em;
+    margin: 1em auto;
 }
 
 h1 {
@@ -41,6 +41,9 @@ section:not(.intro) {
     padding: 1em;
     margin-bottom: 1em;
     border-radius: 12px;
+    min-width: 300px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .bird-point::after {
@@ -108,4 +111,21 @@ form input, textarea {
 form button {
     border: none;
     font-family: "proxima-soft", sans-serif;
+}
+
+@media (min-width: 650px) {
+    .main-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    h1 {
+        grid-column: -1 / 1;
+        grid-row: 1/2;
+    }
+
+    section:not(.intro) {
+        margin-bottom: 0;
+    }
 }

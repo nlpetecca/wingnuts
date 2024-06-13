@@ -49,7 +49,7 @@ section:not(.intro) {
 .bird-point::after {
     content: " ";
     display: block;
-    background-image: url("/images/birds/logo-left-point.png");
+    background-image: url("/wingnuts/images/birds/logo-left-point.png");
     height: 160px;
     width: 180px;
     background-size: contain;

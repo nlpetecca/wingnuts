@@ -4,7 +4,7 @@ body {
 
 main {
     max-width: 600px;
-    margin: 2em auto;
+    margin: 2em 1em;
     padding: 1em;
     background-color: #ffffffe3;
     border-radius: 12px;
@@ -75,4 +75,10 @@ form a {
     font-family: 'proxima-soft', sans-serif;
     font-weight: 900;
     padding: .5em;
+}
+
+@media (min-width: 550px) {
+    main {
+        margin: 2em auto;
+    }
 }

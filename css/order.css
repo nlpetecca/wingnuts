@@ -2,8 +2,10 @@ body {
   background-color: #E1E7E9;
 }
 
-main {
-  padding: 1em;
+.dropdown {
+  background-color: white;
+  padding: .5em .5em 2em;
+  margin: 0 auto;
 }
 
 label {
@@ -42,9 +44,15 @@ option {
   flex-wrap: wrap;
 }
 
-.menu-wrapper h2, #Parties h3 {
+#Parties h3 {
   max-width: 100%;
   width: 100%;
+  text-shadow: 0 0 10px #575757;
+  color: white;
+}
+
+.menu-wrapper h2 {
+  display: none;
 }
 
 .toggle-off {

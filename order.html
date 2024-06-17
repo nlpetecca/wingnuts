@@ -15,19 +15,21 @@
     <a href="#main" id="skip-to-main" tabindex="1">Skip to main</a>
     <header id="header"></header>
     <main id="main">
-      <section class="max-width-900">
-        <h1>Order Online</h1>
-        <label for="menu-categories">Choose menu category</label>
-        <select name="menu-categories" id="menu-categories">
-          <option value="Combos" selected>Combos</option>
-          <option value="Burgers/Sandwiches">Burgers/Sandwiches</option>
-          <option value="Wraps">Wraps</option>
-          <option value="Salads">Salads</option>
-          <option value="Parties">Parties</option>
-          <option value="Sides">Sides</option>
-          <option value="Desserts">Desserts</option>
-          <option value="Drinks">Drinks</option>
-        </select>
+      <section class="dropdown">
+        <div class="max-width-900">
+          <h1>Order Online</h1>
+          <label for="menu-categories">Choose menu category</label>
+          <select name="menu-categories" id="menu-categories">
+            <option value="Combos" selected>Combos</option>
+            <option value="Burgers/Sandwiches">Burgers/Sandwiches</option>
+            <option value="Wraps">Wraps</option>
+            <option value="Salads">Salads</option>
+            <option value="Parties">Parties</option>
+            <option value="Sides">Sides</option>
+            <option value="Desserts">Desserts</option>
+            <option value="Drinks">Drinks</option>
+          </select>
+        </div>
       </section>
       <div class="max-width-900">
         <section id="Combos" class="toggle-on menu-wrapper">
@@ -608,6 +610,9 @@
           </div>
         </section>
       </div>
+      <video autoplay muted plays-inline>
+        <source src="images/circles.mp4" type="video/mp4" />
+      </video>
     </main>
     <footer id="footer"></footer>
   </body>
